@@ -1,0 +1,67 @@
+2017-11-25 17:37:16.143475: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-25 17:37:16.143568: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-25 17:37:16.143584: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-25 17:37:16.143595: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-25 17:37:16.143606: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-25 17:37:20.301654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Tesla P40
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:03:00.0
+Total memory: 22.38GiB
+Free memory: 22.22GiB
+2017-11-25 17:37:20.301702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2017-11-25 17:37:20.301714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2017-11-25 17:37:20.301725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla P40, pci bus id: 0000:03:00.0)
+Epoch 1/4
+
+    1/51200 [..............................] - ETA: 595:10:47 - loss: 49.9999
+ 51199/51200 [============================>.] - ETA: 0s - loss: 1.1880acc: 97.656250
+
+51200/51200 [==============================] - 16833s 329ms/step - loss: 1.1880 - val_loss: 0.6077
+Epoch 2/4
+
+    1/51200 [..............................] - ETA: 5:25:38 - loss: 0.7827
+ 51199/51200 [============================>.] - ETA: 0s - loss: 0.8818acc: 99.218750
+
+51200/51200 [==============================] - 16714s 326ms/step - loss: 0.8818 - val_loss: 0.7624
+Epoch 3/4
+
+    1/51200 [..............................] - ETA: 2:26:02 - loss: 0.2177
+ 51199/51200 [============================>.] - ETA: 0s - loss: 0.5621acc: 96.875000
+
+51200/51200 [==============================] - 16712s 326ms/step - loss: 0.5621 - val_loss: 0.5870
+Epoch 4/4
+
+    1/51200 [..............................] - ETA: 2:18:22 - loss: 0.0917
+51199/51200 [============================>.] - ETA: 0s - loss: 0.5601acc: 99.218750
+
+51200/51200 [==============================] - 16725s 327ms/step - loss: 0.5601 - val_loss: 0.5409
+Using TensorFlow backend.
+train_ctc.py:73: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3), activation="relu")`
+  x = Convolution2D(32, 3, 3, activation='relu')(x)
+train_ctc.py:74: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3), activation="relu")`
+  x = Convolution2D(32, 3, 3, activation='relu')(x)
+train_ctc.py:82: UserWarning: Update your `GRU` call to the Keras 2 API: `GRU(128, return_sequences=True, name="gru1", kernel_initializer="he_normal")`
+  gru_1 = GRU(rnn_size, return_sequences=True, init='he_normal', name='gru1')(x)
+train_ctc.py:83: UserWarning: Update your `GRU` call to the Keras 2 API: `GRU(128, return_sequences=True, go_backwards=True, name="gru1_b", kernel_initializer="he_normal")`
+  gru_1b = GRU(rnn_size, return_sequences=True, go_backwards=True, init='he_normal', name='gru1_b')(x)
+train_ctc.py:84: UserWarning: The `merge` function is deprecated and will be removed after 08/2017. Use instead layers from `keras.layers.merge`, e.g. `add`, `concatenate`, etc.
+  gru1_merged = merge([gru_1, gru_1b], mode='sum')
+/usr/local/lib/python3.6/site-packages/keras/legacy/layers.py:458: UserWarning: The `Merge` layer is deprecated and will be removed after 08/2017. Use instead layers from `keras.layers.merge`, e.g. `add`, `concatenate`, etc.
+  name=name)
+train_ctc.py:86: UserWarning: Update your `GRU` call to the Keras 2 API: `GRU(128, return_sequences=True, name="gru2", kernel_initializer="he_normal")`
+  gru_2 = GRU(rnn_size, return_sequences=True, init='he_normal', name='gru2')(gru1_merged)
+train_ctc.py:87: UserWarning: Update your `GRU` call to the Keras 2 API: `GRU(128, return_sequences=True, go_backwards=True, name="gru2_b", kernel_initializer="he_normal")`
+  gru_2b = GRU(rnn_size, return_sequences=True, go_backwards=True, init='he_normal', name='gru2_b')(gru1_merged)
+train_ctc.py:88: UserWarning: The `merge` function is deprecated and will be removed after 08/2017. Use instead layers from `keras.layers.merge`, e.g. `add`, `concatenate`, etc.
+  x = merge([gru_2, gru_2b], mode='concat')
+train_ctc.py:90: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(63, activation="softmax", kernel_initializer="he_normal")`
+  x = Dense(n_class, init='he_normal', activation='softmax')(x)
+train_ctc.py:92: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=Tensor("in..., outputs=Tensor("de...)`
+  base_model = Model(input=input_tensor, output=x)
+train_ctc.py:99: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=[<tf.Tenso..., outputs=[<tf.Tenso...)`
+  model = Model(input=[input_tensor, labels, input_length, label_length], output=[loss_out])
+train_ctc.py:108: UserWarning: The semantics of the Keras 2 argument `steps_per_epoch` is not the same as the Keras 1 argument `samples_per_epoch`. `steps_per_epoch` is the number of batches to draw from the generator at each epoch. Basically steps_per_epoch = samples_per_epoch/batch_size. Similarly `nb_val_samples`->`validation_steps` and `val_samples`->`steps` arguments have changed. Update your method calls accordingly.
+  validation_data=gen(), nb_val_samples=128)
+train_ctc.py:108: UserWarning: Update your `fit_generator` call to the Keras 2 API: `fit_generator(<generator..., callbacks=[<keras.ca..., validation_data=<generator..., steps_per_epoch=51200, epochs=4, validation_steps=128)`
+  validation_data=gen(), nb_val_samples=128)

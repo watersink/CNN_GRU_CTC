@@ -1,0 +1,68 @@
+2017-11-24 20:03:59.662859: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-24 20:03:59.662946: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-24 20:03:59.662958: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-24 20:03:59.662965: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-24 20:03:59.662972: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-24 20:04:00.683633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Tesla P40
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:02:00.0
+Total memory: 22.38GiB
+Free memory: 22.22GiB
+2017-11-24 20:04:00.683697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2017-11-24 20:04:00.683707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2017-11-24 20:04:00.683727: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla P40, pci bus id: 0000:02:00.0)
+Epoch 1/10
+		1/51200 [..............................] - ETA: 103:54:12 - loss: 50.9063 - c1_loss: 12.2511 - c2_loss: 12.5703 - c3_loss: 13.3931 - c4_loss: 12.6918 - c1_acc: 0.0312 - c2_acc: 0.0000e+00 - c3_acc: 0.0000e+00 - c4_acc: 0.0000e+00
+51200/51200 [==============================] - 4516s 88ms/step - loss: 1.5732 - c1_loss: 0.3832 - c2_loss: 0.3710 - c3_loss: 0.4129 - c4_loss: 0.4062 - c1_acc: 0.9163 - c2_acc: 0.9197 - c3_acc: 0.9108 - c4_acc: 0.9153 - val_loss: 0.6718 - val_c1_loss: 0.1401 - val_c2_loss: 0.1652 - val_c3_loss: 0.1854 - val_c4_loss: 0.1811 - val_c1_acc: 0.9825 - val_c2_acc: 0.9794 - val_c3_acc: 0.9747 - val_c4_acc: 0.9789
+Epoch 2/10
+    1/51200 [..............................] - ETA: 38:31 - loss: 0.2468 - c1_loss: 0.0076 - c2_loss: 0.2118 - c3_loss: 0.0237 - c4_loss: 0.0038 - c1_acc: 1.0000 - c2_acc: 0.9688 - c3_acc: 1.0000 - c4_acc: 1.0000
+51200/51200 [==============================] - 4412s 86ms/step - loss: 0.6671 - c1_loss: 0.1410 - c2_loss: 0.1603 - c3_loss: 0.1818 - c4_loss: 0.1840 - c1_acc: 0.9800 - c2_acc: 0.9772 - c3_acc: 0.9723 - c4_acc: 0.9746 - val_loss: 0.7791 - val_c1_loss: 0.1672 - val_c2_loss: 0.1909 - val_c3_loss: 0.2071 - val_c4_loss: 0.2138 - val_c1_acc: 0.9786 - val_c2_acc: 0.9748 - val_c3_acc: 0.9729 - val_c4_acc: 0.9713
+Epoch 3/10
+    1/51200 [..............................] - ETA: 37:44 - loss: 0.2832 - c1_loss: 0.0291 - c2_loss: 0.0283 - c3_loss: 0.1439 - c4_loss: 0.0819 - c1_acc: 0.9688 - c2_acc: 0.9688 - c3_acc: 0.9688 - c4_acc: 0.9688
+51200/51200 [==============================] - 4573s 89ms/step - loss: 0.7050 - c1_loss: 0.1518 - c2_loss: 0.1692 - c3_loss: 0.1910 - c4_loss: 0.1930 - c1_acc: 0.9786 - c2_acc: 0.9761 - c3_acc: 0.9714 - c4_acc: 0.9737 - val_loss: 0.7257 - val_c1_loss: 0.1551 - val_c2_loss: 0.1798 - val_c3_loss: 0.1897 - val_c4_loss: 0.2012 - val_c1_acc: 0.9811 - val_c2_acc: 0.9767 - val_c3_acc: 0.9755 - val_c4_acc: 0.9765
+Epoch 4/10
+    1/51200 [..............................] - ETA: 39:10 - loss: 0.1884 - c1_loss: 0.0285 - c2_loss: 0.0301 - c3_loss: 0.1171 - c4_loss: 0.0127 - c1_acc: 0.9688 - c2_acc: 1.0000 - c3_acc: 0.9375 - c4_acc: 1.0000
+ 51200/51200 [==============================] - 4294s 84ms/step - loss: 0.7147 - c1_loss: 0.1525 - c2_loss: 0.1725 - c3_loss: 0.1932 - c4_loss: 0.1965 - c1_acc: 0.9786 - c2_acc: 0.9761 - c3_acc: 0.9716 - c4_acc: 0.9734 - val_loss: 0.7611 - val_c1_loss: 0.1615 - val_c2_loss: 0.1876 - val_c3_loss: 0.2012 - val_c4_loss: 0.2108 - val_c1_acc: 0.9807 - val_c2_acc: 0.9785 - val_c3_acc: 0.9754 - val_c4_acc: 0.9759
+Epoch 5/10
+    1/51200 [..............................] - ETA: 39:32 - loss: 0.0619 - c1_loss: 0.0124 - c2_loss: 0.0085 - c3_loss: 0.0015 - c4_loss: 0.0395 - c1_acc: 1.0000 - c2_acc: 1.0000 - c3_acc: 1.0000 - c4_acc: 0.9688
+51200/51200 [==============================] - 4197s 82ms/step - loss: 0.7269 - c1_loss: 0.1550 - c2_loss: 0.1755 - c3_loss: 0.1962 - c4_loss: 0.2003 - c1_acc: 0.9782 - c2_acc: 0.9762 - c3_acc: 0.9719 - c4_acc: 0.9734 - val_loss: 0.7870 - val_c1_loss: 0.1644 - val_c2_loss: 0.1922 - val_c3_loss: 0.2111 - val_c4_loss: 0.2194 - val_c1_acc: 0.9787 - val_c2_acc: 0.9763 - val_c3_acc: 0.9719 - val_c4_acc: 0.9733
+Epoch 6/10
+    1/51200 [..............................] - ETA: 1:00:56 - loss: 0.3363 - c1_loss: 0.0297 - c2_loss: 0.2729 - c3_loss: 0.0318 - c4_loss: 0.0018 - c1_acc: 1.0000 - c2_acc: 0.9375 - c3_acc: 0.9688 - c4_acc: 1.0000
+51200/51200 [==============================] - 4204s 82ms/step - loss: 0.7227 - c1_loss: 0.1532 - c2_loss: 0.1746 - c3_loss: 0.1945 - c4_loss: 0.2003 - c1_acc: 0.9786 - c2_acc: 0.9767 - c3_acc: 0.9724 - c4_acc: 0.9737 - val_loss: 0.7795 - val_c1_loss: 0.1608 - val_c2_loss: 0.1922 - val_c3_loss: 0.2118 - val_c4_loss: 0.2148 - val_c1_acc: 0.9799 - val_c2_acc: 0.9777 - val_c3_acc: 0.9750 - val_c4_acc: 0.9750
+Epoch 7/10
+    1/51200 [..............................] - ETA: 39:00 - loss: 0.3249 - c1_loss: 0.1097 - c2_loss: 0.0162 - c3_loss: 0.1853 - c4_loss: 0.0136 - c1_acc: 0.9688 - c2_acc: 1.0000 - c3_acc: 0.9688 - c4_acc: 1.0000
+  51200/51200 [==============================] - 4205s 82ms/step - loss: 0.7729 - c1_loss: 0.1657 - c2_loss: 0.1866 - c3_loss: 0.2078 - c4_loss: 0.2128 - c1_acc: 0.9779 - c2_acc: 0.9761 - c3_acc: 0.9719 - c4_acc: 0.9732 - val_loss: 0.7615 - val_c1_loss: 0.1587 - val_c2_loss: 0.1866 - val_c3_loss: 0.2012 - val_c4_loss: 0.2150 - val_c1_acc: 0.9836 - val_c2_acc: 0.9793 - val_c3_acc: 0.9783 - val_c4_acc: 0.9782
+Epoch 8/10
+    1/51200 [..............................] - ETA: 37:55 - loss: 0.0623 - c1_loss: 0.0023 - c2_loss: 0.0029 - c3_loss: 0.0568 - c4_loss: 4.4110e-04 - c1_acc: 1.0000 - c2_acc: 1.0000 - c3_acc: 0.9688 - c4_acc: 1.0000
+ 51200/51200 [==============================] - 4182s 82ms/step - loss: 0.7169 - c1_loss: 0.1508 - c2_loss: 0.1735 - c3_loss: 0.1938 - c4_loss: 0.1987 - c1_acc: 0.9789 - c2_acc: 0.9769 - c3_acc: 0.9730 - c4_acc: 0.9744 - val_loss: 0.7497 - val_c1_loss: 0.1585 - val_c2_loss: 0.1812 - val_c3_loss: 0.2016 - val_c4_loss: 0.2084 - val_c1_acc: 0.9785 - val_c2_acc: 0.9770 - val_c3_acc: 0.9739 - val_c4_acc: 0.9755
+Epoch 9/10
+    1/51200 [..............................] - ETA: 36:49 - loss: 0.1199 - c1_loss: 0.0269 - c2_loss: 0.0696 - c3_loss: 0.0086 - c4_loss: 0.0148 - c1_acc: 1.0000 - c2_acc: 0.9688 - c3_acc: 1.0000 - c4_acc: 1.0000
+ 51200/51200 [==============================] - 4207s 82ms/step - loss: 0.7293 - c1_loss: 0.1551 - c2_loss: 0.1758 - c3_loss: 0.1968 - c4_loss: 0.2016 - c1_acc: 0.9784 - c2_acc: 0.9767 - c3_acc: 0.9727 - c4_acc: 0.9738 - val_loss: 0.8029 - val_c1_loss: 0.1703 - val_c2_loss: 0.1976 - val_c3_loss: 0.2162 - val_c4_loss: 0.2188 - val_c1_acc: 0.9816 - val_c2_acc: 0.9796 - val_c3_acc: 0.9760 - val_c4_acc: 0.9764
+Epoch 10/10
+    1/51200 [..............................] - ETA: 38:26 - loss: 0.0299 - c1_loss: 0.0103 - c2_loss: 0.0130 - c3_loss: 0.0038 - c4_loss: 0.0028 - c1_acc: 1.0000 - c2_acc: 1.0000 - c3_acc: 1.0000 - c4_acc: 1.0000
+51200/51200 [==============================] - 4206s 82ms/step - loss: 0.7416 - c1_loss: 0.1583 - c2_loss: 0.1795 - c3_loss: 0.1994 - c4_loss: 0.2044 - c1_acc: 0.9780 - c2_acc: 0.9765 - c3_acc: 0.9727 - c4_acc: 0.9738 - val_loss: 0.7566 - val_c1_loss: 0.1609 - val_c2_loss: 0.1895 - val_c3_loss: 0.1961 - val_c4_loss: 0.2100 - val_c1_acc: 0.9828 - val_c2_acc: 0.9792 - val_c3_acc: 0.9780 - val_c4_acc: 0.9768
+Using TensorFlow backend.
+train_cnn.py:47: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:48: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:47: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:48: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:47: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(128, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:48: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(128, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:47: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(256, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:48: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(256, (3, 3), activation="relu")`
+  x = Convolution2D(32*2**i, 3, 3, activation='relu')(x)
+train_cnn.py:54: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=Tensor("in..., outputs=[<tf.Tenso...)`
+  model = Model(input=input_tensor, output=x)
+train_cnn.py:62: UserWarning: The semantics of the Keras 2 argument `steps_per_epoch` is not the same as the Keras 1 argument `samples_per_epoch`. `steps_per_epoch` is the number of batches to draw from the generator at each epoch. Basically steps_per_epoch = samples_per_epoch/batch_size. Similarly `nb_val_samples`->`validation_steps` and `val_samples`->`steps` arguments have changed. Update your method calls accordingly.
+  validation_data=gen(), nb_val_samples=1280)
+train_cnn.py:62: UserWarning: Update your `fit_generator` call to the Keras 2 API: `fit_generator(<generator..., validation_data=<generator..., steps_per_epoch=51200, epochs=10, validation_steps=1280)`
+  validation_data=gen(), nb_val_samples=1280)
+
