@@ -19,7 +19,7 @@
     python3 eval_test_ctc.py
 <div>
 <img width="300" height="300" src="https://github.com/watersink/CNN_GRU_CTC/raw/master/result/ctc1.jpg"/>
-<img width="300" height="300" src="https://github.com/watersink/CNN_GRU_CTC/raw/master/result/ctc.png"/>
+<img width="300" height="300" src="https://github.com/watersink/CNN_GRU_CTC/raw/master/result/ctc.jpg"/>
 </div>
 
 ## references
