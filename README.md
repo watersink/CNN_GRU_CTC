@@ -29,3 +29,6 @@ https://github.com/fchollet/keras/blob/master/examples/image_ocr.py
 https://github.com/ypwhs/captcha_break
 
 https://github.com/baidu-research/warp-ctc
+
+## ocr detection and recognition group 
+![image]( https://github.com/watersink/CNN_GRU_CTC/raw/master/images/OCR.png) 
