@@ -1,6 +1,11 @@
 # CNN_GRU_CTC
 基于传统多标签的定长验证码识别和基于GRU+CTC的不定长验证码识别
 
+# request
+TensorFlow = 1.3.0 ,1.4.0 ,1.8.0
+Keras = 2.0.0
+其他版本未测试
+
 ## original cnn multiple lables classification
     cd ./cnn
 
@@ -31,4 +36,4 @@ https://github.com/ypwhs/captcha_break
 https://github.com/baidu-research/warp-ctc
 
 ## ocr detection and recognition group 
-![image]( https://github.com/watersink/CNN_GRU_CTC/raw/master/images/OCR.png) 
+![image]( https://github.com/watersink/CNN_GRU_CTC/raw/master/OCR.png) 
